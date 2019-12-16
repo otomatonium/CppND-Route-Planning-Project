@@ -140,6 +140,8 @@ void RoutePlanner::AStarSearch() {
 
   // TODO: Implement your solution here.
   current_node = start_node;
+  current_node->visited = true;
+  this->open_list.push_back(current_node); 
   int count = 0;
 
   //  while ((current_node->x != end_node->x) || (current_node->y !=
